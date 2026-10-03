@@ -1,0 +1,93 @@
+编 刷 历 短 阅
+首页 > 模拟宇宙：寰宇蝗灾 > 「欢愉Ⅱ」
+
+如果是第一次来，按"Ctrl+D"可以收藏随时查看更新~觉得WIKI好玩的话，请推荐给朋友哦～(◕ω＜)☆
+
+按右上角“WIKI功能→编辑”即可修改页面内容。
+
+螺丝咕姆<天才俱乐部#76>
+「提问：是否有与阿哈交流之概率？」你仍在原地，螺丝咕姆礼貌地开口，「无机；有机；星神；我赞美三者间思想的充分涌流与平等。」
+
+黑塔<天才俱乐部#83>
+「开拓者，还在等待星神回应？好无聊啊，玩个游戏吧。」黑塔嗤嗤地笑了，「你觉得谁最能跟阿哈合得来？」
+
+螺丝咕姆。
+斯蒂芬•劳艾德。
+我！
+
+黑塔<天才俱乐部#83>
+「螺丝咕姆，他与阿哈交流的方式估计跟我们不大一样。你这么想也没错…」
+
+黑塔<天才俱乐部#83>
+「这个小鬼！我总觉得他会用奇思妙想和阿哈混得很好，反正都不是常人能理解的东西。」
+
+黑塔<天才俱乐部#83>
+「哦。」黑塔敷衍。
+
+(window.RLQ=window.RLQ||[]).push([ ["jquery"], function(){
+    $(function(){
+        $('.resourceLoader').each(function () {
+            var $x = $(this);
+            var text = $.trim($x.text());
+          
+            if (!text) return;
+          
+            //加载模块
+            if ($x.data('isModule') === true)
+                return mw.loader.load(text);
+            
+            //自动补充MediaWiki命名空间
+            var ns = text.match('^.*?:');
+            if (!ns) text = 'MediaWiki:' + text;
+          
+            //加载CSS样式表
+            var mime = ($x.data('mime') || "text/javascript").toLowerCase();
+            if (mime == "text/css") {
+                if (text.slice(-4).toLowerCase() !== '.css') text = text + '.css';
+                //if ($x.data('debug') !== true) text = text + '&debug=false';
+                return mw.loader.load("//wiki.biligame.com/" + mw.config.get("wgGameName") + "/index.php?title=" + text + "&action=raw&ctype=text/css", "text/css");
+            }
+          
+            //加载JS脚本
+            if (ns && ns[0].toLowerCase() !== 'mediawiki:') {
+                return console.log('ResourceLoader: 不允许加载MediaWiki以外的js脚本');
+            }
+            if (text.slice(-3).toLowerCase() !== '.js') text = text + '.js';
+            console.log('ResourceLoader: 加载' + text);
+            //if ($x.data('debug') !== true) text = text + '&debug=false';
+            return mw.loader.load("//wiki.biligame.com/" + mw.config.get("wgGameName") + "/index.php?title=" + text + "&action=raw&ctype=text/javascript", "text/javascript");
+        });
+    })
+}]);
+
+MediaWiki:PlotOptions
+
+阿哈<欢愉>
+你继续在原地等待——你发誓你真的笑不出来。你的白眼快翻到天上时，祂——终于来了！祂一出现身边就刮起巨大的虚假数据风暴，祂要让你开开心心，你的白眼却翻到天上。…但你发现祂必须要你笑出来，你只好扯出一个咧嘴的虚伪笑容。
+
+阿哈<欢愉>
+「嗨，阿基维利！你把那个球玩得不错♥。」阿哈开始夸赞你，「你是玩球高手，能告诉我是谁制作了这个球吗？噢…等等，祂要来了。让我们先让位于伟大的祂——鼓掌、敬礼吧！」
+
+希佩<同谐>
+祂来了？你不知道阿哈是什么意思——盛大的巡礼却突然开启，一片喧嚣与欢闹，你却开始无声地尖叫。暖流撩拨着你，上万双眼睛于同一瞬间温柔地看着你，对你发出邀请。
+
+希佩<同谐>
+你相信祂的指间抹起彩虹色的水波——你的心绪被抚平，游走于拼图碎片、现代性的多重面孔与主义里，你相信祂已经抱住你，你也已成为意志集结的孩子！你有些迟疑，却又无法拒绝，甚至渴望更多地得到祂、拥抱祂……
+
+希佩<同谐>
+阿基维利 / 开拓 是你吗？我们以为你死了 / 失踪了。成千上万的命运 / 历史塑造了宇宙的长势 / 走向。我们几乎相信 / 判断你已成为它的养料 / 注脚。
+
+希佩…！/你真的有/多副面孔
+是我！/是你！/是祂！/是大家！
+
+模拟宇宙
+谁还没点*多重*面孔？
+
+模拟宇宙
+不，你是阿基维利！
+
+阿哈<欢愉>
+「噢，集群星之母！」阿哈开始夸夸，祂的话却使你浑身不适，「只要你想做的事情足够好玩——哪怕是接力棒游戏！局势瞬息万变，上一次我们还在洽谈，下一次太一就变成了你。惋惜…我的老朋友！但祂使你看上去更*好*了。」
+
+黑塔<天才俱乐部#83>
+「好吧…停。『秩序』被『同谐』所同化，这我倒不意外。」黑塔摊手，「只是不知道发生在什么时候。莫非『秩序』的消失也和列神之战有关？唉，家族对此只字不提…我还挺想再见次太一，哪怕祂有点死板。噢，开拓者，要是让我转述这段八卦，我会这么说：希佩和阿哈还有你，为了塔伊兹育罗斯绞在了一起！」
