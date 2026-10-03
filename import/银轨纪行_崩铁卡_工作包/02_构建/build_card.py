@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""组卡：以用户 0930 导出为底，换主提示词、后缀、CSS，世界书＝新核心＋已重制时代（匹诺康尼、雅利洛、仙舟、哈托彼亚、翁法罗斯、寰宇蝗灾、帝皇战争）＋其余时代的旧条目（索引）。
+"""组卡：以用户 0930 导出为底，换主提示词、后缀、CSS，世界书＝新核心＋已重制时代（匹诺康尼、雅利洛、仙舟、哈托彼亚、翁法罗斯、第一次繁荣、寰宇蝗灾、帝皇战争）＋其余时代的旧条目（索引）。
 创作文本全部来自手写的 md；本脚本只做切分、钥匙拼接与装箱。"""
 import json, re, glob, os, sys
 
@@ -8,8 +8,8 @@ B = os.path.join(ROOT, '02_构建')            # 主提示词、后缀、CSS、�
 ERA_DIR = os.path.join(ROOT, '03_时代')      # 各时代的档案批次（子目录随便分，按文件名找）
 OUT_DIR = os.path.join(ROOT, '01_成品')
 SRC = glob.glob(os.path.join(ROOT, '00_底稿', '*.json'))[0]   # 以你最近一次导出为底；换底就换这个文件
-VER = 'v1.6'
-OUT = os.path.join(OUT_DIR, f'银轨纪行_{VER}_匹诺康尼雅利洛仙舟哈托彼亚翁法罗斯寰宇蝗灾帝皇战争重制_以你0930导出为底.json')
+VER = 'v1.7'
+OUT = os.path.join(OUT_DIR, f'银轨纪行_{VER}_匹诺康尼雅利洛仙舟哈托彼亚翁法罗斯第一次繁荣寰宇蝗灾帝皇战争重制_以你0930导出为底.json')
 
 def entry(group, key, value, depth, kr, sort):
     return {"group": group, "match_type": 3, "key": key, "key_region": kr, "value_type": 0,
@@ -233,6 +233,29 @@ EMP_EXTRA = {
     '东方启行与信用点': ['信用点是怎么来的', '信用点体系的建立'],
 }
 
+# 第一次繁荣：词义太宽、或会撞别的时代（列车组、天才俱乐部、翁法罗斯的赞达尔、帝皇战争的寂静领主、蝗灾的蠹星与考古学派、通用词）的钥匙都不要，靠专名触发
+PRO_STOP = set("""繁荣 筑城者 阿基维利 无名客 克里珀 银轨 太一 星穹列车 蠹星 帕姆 虚构史学家 裴伽纳 拓星者 锤音 浮黎 后援队 列车长 药师
+远行 抄本 流星 武装考古学派 考古武装学派 好奇 图谱 #4 鞘翅目 寂静领主 迷思 第一位天才 虚数之树 巧合 碎壳原野 纶音 兰姆•图 接轨 造神
+赞达尔•壹•桑原 星体计算机 穿长袍的旅人 零四 大家伙 虚数能量 十四行代数式 轶事 债务清单 见祂一面 向博识尊发问 登神那天 讳莫如深
+开拓星神 物种在少 多种生理性别 销毁自己的画像 琥珀王后援队 乘员专票 黄金年代 车库 烧书 航标 远线""".split())
+PRO_REMOVE = {}
+PRO_EXTRA = {
+    '阿基维利': ['早年的阿基维利', '阿基维利在第一次繁荣', '喝酒的阿基维利'],
+    '帕姆': ['早年的帕姆', '帕姆在第一次繁荣'],
+    '无名客（早年）': ['早年的无名客们', '第一次繁荣的无名客'],
+    '裴伽纳与拓星者的图纸': ['拓星者的图纸', '裴伽纳的传说'],
+    '波尔卡•卡卡目（本时代）': ['寂静领主在苇间镇', '杀赞达尔的女人', '寂静领主在俄亥提'],
+    '人造生命与零四': ['合成生命零四', '零四的名字'],
+    '后援队与筑城者（本时代）': ['后援队在七岔口', '第一次繁荣的筑城者'],
+    '星神们在繁荣里': ['繁荣里的星神', '好年景里的星神'],
+    '兰姆•图与蠹星（人来以前）': ['兰姆•图的野外笔记', '年轻的兰姆•图', '人来以前的蠹星'],
+    '虚构史学家与署名': ['第一次繁荣的虚构史学家'],
+    '活事件：《黄金年代》': ['俄亥提的黄金年代'],
+    '活事件：《远行》': ['赞达尔的远行', '赞达尔的肉身之死'],
+    '活事件：《造神》': ['博识尊是怎么造出来的', '星体计算机的工程'],
+    '星体计算机与博识尊': ['星体计算机登神', '博识尊是怎么来的'],
+}
+
 ERAS = [
     dict(tag='匹诺康尼', group='10｜匹诺康尼', core='wb_pen_core.md', archives='匹诺康尼_档案_第*批.md',
          sort_start=4541, sort_end=4977, STOP=PEN_STOP, REMOVE=PEN_REMOVE, EXTRA=PEN_EXTRA, old_prefix='10｜'),
@@ -248,6 +271,8 @@ ERAS = [
          sort_start=2045, sort_end=2449, STOP=SWM_STOP, REMOVE=SWM_REMOVE, EXTRA=SWM_EXTRA, old_prefix='03｜'),
     dict(tag='帝皇战争', group='04｜边星贸易战争与第一次帝皇战争', core='wb_emp_core.md', archives='帝皇战争_档案_第*批.md',
          sort_start=2451, sort_end=2947, STOP=EMP_STOP, REMOVE=EMP_REMOVE, EXTRA=EMP_EXTRA, old_prefix='04｜'),
+    dict(tag='第一次繁荣', group='02｜第一次繁荣', core='wb_pro_core.md', archives='第一次繁荣_档案_第*批.md',
+         sort_start=1933, sort_end=2043, STOP=PRO_STOP, REMOVE=PRO_REMOVE, EXTRA=PRO_EXTRA, old_prefix='02｜'),
 ]
 
 era_entries = {}   # tag -> (core_list, archive_list, keytable)
@@ -306,7 +331,7 @@ json.dump(d, open(OUT, 'w', encoding='utf-8'), ensure_ascii=False)
 lines = [f'# 世界书钥匙表（{VER}）', '',
          f'核心条目 {len(core_entries)} 条；' + '；'.join(
              f"{t}总览与示范 {len(era_entries[t][0])} 条、档案 {len(era_entries[t][1])} 条" for t in era_entries) +
-         f'；保留旧条目 {len(kept)} 条（共享资料与其余五个时代，当索引用）；删去旧条目 {removed} 条（旧全局运行、旧匹诺康尼包、旧雅利洛包、旧仙舟包、旧哈托彼亚包、旧翁法罗斯包、旧寰宇蝗灾包、旧帝皇战争包）。', '',
+         f'；保留旧条目 {len(kept)} 条（共享资料与其余四个时代，当索引用）；删去旧条目 {removed} 条（旧全局运行、旧匹诺康尼包、旧雅利洛包、旧仙舟包、旧哈托彼亚包、旧翁法罗斯包、旧第一次繁荣包、旧寰宇蝗灾包、旧帝皇战争包）。', '',
          '## 核心运行']
 for e in core_entries:
     lines.append(f"- {e['value'].splitlines()[0].lstrip('# ')}｜深度{e['depth']}｜钥匙 `{e['key'][:60]}`｜{len(e['value'])}字")
