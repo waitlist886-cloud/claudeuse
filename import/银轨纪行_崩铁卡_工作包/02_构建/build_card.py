@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""组卡：以用户 0930 导出为底，换主提示词、后缀、CSS，世界书＝新核心＋已重制时代（匹诺康尼、雅利洛、仙舟、哈托彼亚、翁法罗斯、第一次繁荣、寰宇蝗灾、帝皇战争）＋其余时代的旧条目（索引）。
+"""组卡：以用户 0930 导出为底，换主提示词、后缀、CSS，世界书＝新核心＋已重制时代（匹诺康尼、雅利洛、仙舟、哈托彼亚、翁法罗斯、第一次繁荣、寰宇蝗灾、帝皇战争、第二次繁荣）＋其余时代的旧条目（索引）。
 创作文本全部来自手写的 md；本脚本只做切分、钥匙拼接与装箱。"""
 import json, re, glob, os, sys
 
@@ -8,8 +8,8 @@ B = os.path.join(ROOT, '02_构建')            # 主提示词、后缀、CSS、�
 ERA_DIR = os.path.join(ROOT, '03_时代')      # 各时代的档案批次（子目录随便分，按文件名找）
 OUT_DIR = os.path.join(ROOT, '01_成品')
 SRC = glob.glob(os.path.join(ROOT, '00_底稿', '*.json'))[0]   # 以你最近一次导出为底；换底就换这个文件
-VER = 'v1.7'
-OUT = os.path.join(OUT_DIR, f'银轨纪行_{VER}_匹诺康尼雅利洛仙舟哈托彼亚翁法罗斯第一次繁荣寰宇蝗灾帝皇战争重制_以你0930导出为底.json')
+VER = 'v1.8'
+OUT = os.path.join(OUT_DIR, f'银轨纪行_{VER}_匹诺康尼雅利洛仙舟哈托彼亚翁法罗斯第一次繁荣寰宇蝗灾帝皇战争第二次繁荣重制_以你0930导出为底.json')
 
 def entry(group, key, value, depth, kr, sort):
     return {"group": group, "match_type": 3, "key": key, "key_region": kr, "value_type": 0,
@@ -256,6 +256,30 @@ PRO_EXTRA = {
     '星体计算机与博识尊': ['星体计算机登神', '博识尊是怎么来的'],
 }
 
+# 第二次繁荣：词义太宽、或会撞别的时代（列车组、哈托彼亚的归寂与酒馆愚者、帝皇战争的亚德丽芬、通用词）的钥匙都不要，靠专名触发
+SPR_STOP = set("""星际和平公司 虚构史学家 信任 我见 未抵 亚德丽芬 布拉琪 桃乐丝 晶石 朵莉可 观星者 劫火 血锦 血锦之纪 旧忆 宝钻世界
+阿基维利到来之时 埠口 信标推广一百纪 信标推广 琥珀王一日游 琥珀世界一日游 大开拓时代 最欢愉的愚者 辞别 三万兆个笑话 最后一个笑话
+牧羊人 虫皇遗留的子嗣 黑云蔽日的战争 亚德丽芬的花 线断了没人修 变相人 一枚硬币 血锦之纪徽章 再也不笑了 老灯 颓靡 观星者我见
+领航员我见 第二个人 阿基维利的心脏 同室操戈 沦亡世界亚德丽芬 新来了一位 繁荣之后 梦网""".split())
+SPR_REMOVE = {}
+SPR_EXTRA = {
+    '未抵（酒馆时）': ['酒馆时的未抵', '最欢愉的假面愚者未抵', '未抵在第二次繁荣'],
+    '我见（列车上）': ['列车上的我见', '讲单口喜剧的领航员', '我见在第二次繁荣'],
+    '「晶石」朵莉可': ['领航员朵莉可', '朵莉可的三日歌'],
+    '布拉琪、桃乐丝、牧羊人与几个损友': ['未抵的老朋友们', '酒侍布拉琪在颓靡'],
+    '亚德丽芬（本时代末尾）': ['亚德丽芬的最后几天', '宝钻世界的终结'],
+    '活事件：《劫火》': ['亚德丽芬的劫火', '纳努克诞生那天'],
+    '活事件：《一枚硬币》': ['厄尔兹尼的一枚硬币', '厄尔兹尼的纸钞雨'],
+    '活事件：《辞别》': ['未抵的辞别', '未抵告别酒馆'],
+    '活事件：《晶石》': ['朵莉可结晶', '阿基维利最后一次回到列车'],
+    '颓靡': ['血锦的颓靡', '第二次繁荣的颓靡'],
+    '血锦': ['血锦的价钱'],
+    '公司与通感学派（在血锦）': ['血锦里的公司'],
+    '虚构史学家与列车记录': ['我见的智库被篡改'],
+    '骰子戒指与信任': ['车上的信任'],
+    '琥珀世界一日游': ['琥珀王朝圣之旅'],
+}
+
 ERAS = [
     dict(tag='匹诺康尼', group='10｜匹诺康尼', core='wb_pen_core.md', archives='匹诺康尼_档案_第*批.md',
          sort_start=4541, sort_end=4977, STOP=PEN_STOP, REMOVE=PEN_REMOVE, EXTRA=PEN_EXTRA, old_prefix='10｜'),
@@ -273,6 +297,8 @@ ERAS = [
          sort_start=2451, sort_end=2947, STOP=EMP_STOP, REMOVE=EMP_REMOVE, EXTRA=EMP_EXTRA, old_prefix='04｜'),
     dict(tag='第一次繁荣', group='02｜第一次繁荣', core='wb_pro_core.md', archives='第一次繁荣_档案_第*批.md',
          sort_start=1933, sort_end=2043, STOP=PRO_STOP, REMOVE=PRO_REMOVE, EXTRA=PRO_EXTRA, old_prefix='02｜'),
+    dict(tag='第二次繁荣', group='05｜第二次繁荣', core='wb_spr_core.md', archives='第二次繁荣_档案_第*批.md',
+         sort_start=2949, sort_end=3067, STOP=SPR_STOP, REMOVE=SPR_REMOVE, EXTRA=SPR_EXTRA, old_prefix='05｜'),
 ]
 
 era_entries = {}   # tag -> (core_list, archive_list, keytable)
@@ -331,7 +357,7 @@ json.dump(d, open(OUT, 'w', encoding='utf-8'), ensure_ascii=False)
 lines = [f'# 世界书钥匙表（{VER}）', '',
          f'核心条目 {len(core_entries)} 条；' + '；'.join(
              f"{t}总览与示范 {len(era_entries[t][0])} 条、档案 {len(era_entries[t][1])} 条" for t in era_entries) +
-         f'；保留旧条目 {len(kept)} 条（共享资料与其余四个时代，当索引用）；删去旧条目 {removed} 条（旧全局运行、旧匹诺康尼包、旧雅利洛包、旧仙舟包、旧哈托彼亚包、旧翁法罗斯包、旧第一次繁荣包、旧寰宇蝗灾包、旧帝皇战争包）。', '',
+         f'；保留旧条目 {len(kept)} 条（共享资料与其余三个时代，当索引用）；删去旧条目 {removed} 条（旧全局运行、旧匹诺康尼包、旧雅利洛包、旧仙舟包、旧哈托彼亚包、旧翁法罗斯包、旧第一次繁荣包、旧寰宇蝗灾包、旧帝皇战争包、旧第二次繁荣包）。', '',
          '## 核心运行']
 for e in core_entries:
     lines.append(f"- {e['value'].splitlines()[0].lstrip('# ')}｜深度{e['depth']}｜钥匙 `{e['key'][:60]}`｜{len(e['value'])}字")
