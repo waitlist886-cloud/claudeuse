@@ -1,0 +1,22 @@
+/* 银轨纪行｜推演底座与正文 */
+.yg-base{box-sizing:border-box;margin:8px 0 12px;padding:10px 12px;border:1px solid #3a4e73;border-radius:12px;background:linear-gradient(160deg,#0b1526,#13203a);color:#dfe9fb;font-family:"Noto Serif SC","Songti SC","STSong",serif;font-size:.86em;line-height:1.55;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.yg-base *{box-sizing:border-box}
+.yg-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px 10px;padding-bottom:8px;border-bottom:1px dashed #34496b}
+.yg-grid>div{min-width:0;padding:4px 6px;border-radius:8px;background:rgba(255,255,255,.035)}
+.yg-grid b{display:inline-block;margin-bottom:2px;color:#e6c37a;font-weight:700;letter-spacing:.06em;font-size:.82em}
+.yg-lines{padding-top:6px}
+.yg-lines>div{padding:3px 0;border-bottom:1px dotted rgba(255,255,255,.08)}
+.yg-lines>div:last-child{border-bottom:0}
+.yg-lines b{display:inline-block;min-width:1.6em;margin-right:6px;padding:0 5px;border-radius:5px;background:#24365a;color:#e6c37a;font-weight:700;text-align:center;font-size:.85em}
+.yg-prose{margin:0 0 10px;color:inherit;line-height:1.8}
+.yg-prose p{margin:.6em 0}
+.yg-choices{margin:6px 0 10px;padding:8px 12px;border-left:3px solid #e6c37a;border-radius:0 10px 10px 0;background:rgba(230,195,122,.07)}
+.yg-ct{margin-bottom:4px;color:#e6c37a;font-weight:700;letter-spacing:.08em;font-size:.88em}
+.yg-choices ol{margin:0;padding-left:1.4em}
+.yg-choices li{margin:.3em 0;line-height:1.6}
+.yg-card{margin:8px 0;padding:8px 12px;border:1px solid #3a4e73;border-radius:10px;background:linear-gradient(160deg,#0f1a2e,#162642);color:#dfe9fb;line-height:1.7}
+.yg-card summary{cursor:pointer;color:#e6c37a;font-weight:700;letter-spacing:.06em}
+.yg-card p{margin:.5em 0}
+.yg-far{margin:8px 0 2px;padding:6px 10px;border-radius:8px;color:#9fb3d6;font-style:normal;font-size:.9em;background:rgba(159,179,214,.08)}
+@media (max-width:640px){.yg-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.yg-base{padding:8px 10px;font-size:.84em}}
+@media (max-width:380px){.yg-grid{grid-template-columns:1fr}}
