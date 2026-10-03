@@ -13,5 +13,5 @@ for i, name in enumerate([l.strip() for l in open(lst, encoding='utf-8') if l.st
         open(fn, 'w', encoding='utf-8').write(t); print('ok', i, name, len(t))
     except Exception as e:
         print('FAIL', i, name, e); fails.append(name)
-    time.sleep(2.5)
+    time.sleep(float(os.environ.get("SLP","2.5")))
 print('fails:', fails)
