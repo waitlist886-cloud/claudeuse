@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""组卡：以用户 0930 导出为底，换主提示词、后缀、CSS，世界书＝新核心＋已重制时代（匹诺康尼、雅利洛、仙舟、哈托彼亚、翁法罗斯）＋其余时代的旧条目（索引）。
+"""组卡：以用户 0930 导出为底，换主提示词、后缀、CSS，世界书＝新核心＋已重制时代（匹诺康尼、雅利洛、仙舟、哈托彼亚、翁法罗斯、寰宇蝗灾）＋其余时代的旧条目（索引）。
 创作文本全部来自手写的 md；本脚本只做切分、钥匙拼接与装箱。"""
 import json, re, glob, os, sys
 
@@ -8,8 +8,8 @@ B = os.path.join(ROOT, '02_构建')            # 主提示词、后缀、CSS、�
 ERA_DIR = os.path.join(ROOT, '03_时代')      # 各时代的档案批次（子目录随便分，按文件名找）
 OUT_DIR = os.path.join(ROOT, '01_成品')
 SRC = glob.glob(os.path.join(ROOT, '00_底稿', '*.json'))[0]   # 以你最近一次导出为底；换底就换这个文件
-VER = 'v1.4'
-OUT = os.path.join(OUT_DIR, f'银轨纪行_{VER}_匹诺康尼雅利洛仙舟哈托彼亚翁法罗斯重制_以你0930导出为底.json')
+VER = 'v1.5'
+OUT = os.path.join(OUT_DIR, f'银轨纪行_{VER}_匹诺康尼雅利洛仙舟哈托彼亚翁法罗斯寰宇蝗灾重制_以你0930导出为底.json')
 
 def entry(group, key, value, depth, kr, sort):
     return {"group": group, "match_type": 3, "key": key, "key_region": kr, "value_type": 0,
@@ -186,6 +186,33 @@ AMP_EXTRA = {
     '翁法罗斯的人名与口径汇总': ['翁法罗斯有谁', '翁法罗斯的名字', '翁法罗斯怎么称呼', '翁法罗斯的历法'],
 }
 
+# 寰宇蝗灾：词义太宽、或会撞别的时代（匹诺康尼的梦里蝗灾与铁骑、哈托彼亚的贪饕与酒馆、仙舟的繁育因子、列车与天才俱乐部、通用词）的钥匙都不要，靠专名触发
+SWM_STOP = set("""阿基维利 阿哈 欢愉 同谐 秩序 均衡 太一 希佩 贪饕 奥博洛斯 巨口 兽蜕 阿哈的头 星穹列车 三眼 星轨航图 荣归故里 领航员 推演 斯蒂芬•劳艾德
+筑城者 锤音 联觉信标 天平 虫群 虫群余孽 繁育的命途 祂们 三天 四十年 天亮 天亮了 神陨 列神之战 消失无踪 一个声音 立规矩 秩序鼎盛 纶音 谐乐颂
+虚构史学家 野史 一切献给琥珀王 假面愚者 悲悼伶人 贡多拉 世界尽头酒馆 世界尽头的酒馆 自灭者 格拉默 亚德丽芬 怀表 提图 戈尔 运输船 疯女人
+支援队 公司前身 公司成立 和平的代价 入网 灭星武器
+木屋 零和 城寨 左膀 烧船 水果铺 亲卫队 溺水者 支援船""".split())
+SWM_REMOVE = {}
+SWM_EXTRA = {
+    '活事件：《推演》': ['推演里的蝗灾', '模拟宇宙里的蝗灾'],
+    '活事件：《三天》': ['艾洛蒂亚的城寨', '城寨的三天'],
+    '伊莱狄希纳的领袖／自灭者': ['伊莱狄希纳的自灭者', '蝗灾的自灭者'],
+    '奥博洛斯、渊兽与追猎的人': ['蝗灾里的贪饕', '贪饕的渊兽', '奥博洛斯与虫皇'],
+    '太一与天外合唱班': ['太一是谁', '秩序的星神', '蝗灾里的太一'],
+    '筑城者与锤音': ['蝗灾时的筑城者', '筑城者的预警', '筑城者夫妇'],
+    '希佩': ['蝗灾里的希佩', '希佩吞了太一', '同谐吞并秩序'],
+    '琥珀王支援队': ['灾中的支援队', '支援队的配给'],
+    '世界尽头酒馆与悲悼伶人': ['蝗灾时的酒馆', '偷船的愚者', '酒馆里的愚者们'],
+    '均衡与仲裁官': ['蝗灾里的均衡', '仲裁官的巨响'],
+    '活事件：《神陨》': ['列神围剿虫皇', '虫皇是怎么死的'],
+    '阿哈在蝗灾里': ['阿哈在蝗灾', '蝗灾里的阿哈'],
+    '阿基维利、列车与「三眼」': ['蝗灾里的列车', '阿基维利在蝗灾', '三眼卡皮'],
+    '活事件：《天亮》': ['宙斯忒赫特拉天开', '宙斯忒赫特拉的天亮'],
+    '各家的认领': ['蝗灾是怎么结束的', '谁打赢了蝗灾'],
+    '活事件：《公司》': ['支援队改组', '公司是怎么来的'],
+    '远方的后话与口径汇总': ['蝗灾以后', '蝗灾的名录', '蝗灾的口径'],
+}
+
 ERAS = [
     dict(tag='匹诺康尼', group='10｜匹诺康尼', core='wb_pen_core.md', archives='匹诺康尼_档案_第*批.md',
          sort_start=4541, sort_end=4977, STOP=PEN_STOP, REMOVE=PEN_REMOVE, EXTRA=PEN_EXTRA, old_prefix='10｜'),
@@ -197,6 +224,8 @@ ERAS = [
          sort_start=4979, sort_end=5357, STOP=HT_STOP, REMOVE=HT_REMOVE, EXTRA=HT_EXTRA, old_prefix='11｜'),
     dict(tag='翁法罗斯', group='12｜翁法罗斯', core='wb_amp_core.md', archives='翁法罗斯_档案_第*批.md',
          sort_start=6201, sort_end=11754, STOP=AMP_STOP, REMOVE=AMP_REMOVE, EXTRA=AMP_EXTRA, old_prefix='12｜'),
+    dict(tag='寰宇蝗灾', group='03｜寰宇蝗灾', core='wb_swm_core.md', archives='寰宇蝗灾_档案_第*批.md',
+         sort_start=2045, sort_end=2449, STOP=SWM_STOP, REMOVE=SWM_REMOVE, EXTRA=SWM_EXTRA, old_prefix='03｜'),
 ]
 
 era_entries = {}   # tag -> (core_list, archive_list, keytable)
@@ -255,7 +284,7 @@ json.dump(d, open(OUT, 'w', encoding='utf-8'), ensure_ascii=False)
 lines = [f'# 世界书钥匙表（{VER}）', '',
          f'核心条目 {len(core_entries)} 条；' + '；'.join(
              f"{t}总览与示范 {len(era_entries[t][0])} 条、档案 {len(era_entries[t][1])} 条" for t in era_entries) +
-         f'；保留旧条目 {len(kept)} 条（共享资料与其余八个时代，当索引用）；删去旧条目 {removed} 条（旧全局运行、旧匹诺康尼包、旧雅利洛包、旧仙舟包、旧哈托彼亚包、旧翁法罗斯包）。', '',
+         f'；保留旧条目 {len(kept)} 条（共享资料与其余六个时代，当索引用）；删去旧条目 {removed} 条（旧全局运行、旧匹诺康尼包、旧雅利洛包、旧仙舟包、旧哈托彼亚包、旧翁法罗斯包、旧寰宇蝗灾包）。', '',
          '## 核心运行']
 for e in core_entries:
     lines.append(f"- {e['value'].splitlines()[0].lstrip('# ')}｜深度{e['depth']}｜钥匙 `{e['key'][:60]}`｜{len(e['value'])}字")
