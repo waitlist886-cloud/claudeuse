@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""组卡：以用户 0930 导出为底，换主提示词、后缀、CSS，世界书＝新核心＋已重制时代（匹诺康尼、雅利洛、仙舟、哈托彼亚、翁法罗斯、寰宇蝗灾）＋其余时代的旧条目（索引）。
+"""组卡：以用户 0930 导出为底，换主提示词、后缀、CSS，世界书＝新核心＋已重制时代（匹诺康尼、雅利洛、仙舟、哈托彼亚、翁法罗斯、寰宇蝗灾、帝皇战争）＋其余时代的旧条目（索引）。
 创作文本全部来自手写的 md；本脚本只做切分、钥匙拼接与装箱。"""
 import json, re, glob, os, sys
 
@@ -8,8 +8,8 @@ B = os.path.join(ROOT, '02_构建')            # 主提示词、后缀、CSS、�
 ERA_DIR = os.path.join(ROOT, '03_时代')      # 各时代的档案批次（子目录随便分，按文件名找）
 OUT_DIR = os.path.join(ROOT, '01_成品')
 SRC = glob.glob(os.path.join(ROOT, '00_底稿', '*.json'))[0]   # 以你最近一次导出为底；换底就换这个文件
-VER = 'v1.5'
-OUT = os.path.join(OUT_DIR, f'银轨纪行_{VER}_匹诺康尼雅利洛仙舟哈托彼亚翁法罗斯寰宇蝗灾重制_以你0930导出为底.json')
+VER = 'v1.6'
+OUT = os.path.join(OUT_DIR, f'银轨纪行_{VER}_匹诺康尼雅利洛仙舟哈托彼亚翁法罗斯寰宇蝗灾帝皇战争重制_以你0930导出为底.json')
 
 def entry(group, key, value, depth, kr, sort):
     return {"group": group, "match_type": 3, "key": key, "key_region": kr, "value_type": 0,
@@ -213,6 +213,26 @@ SWM_EXTRA = {
     '远方的后话与口径汇总': ['蝗灾以后', '蝗灾的名录', '蝗灾的口径'],
 }
 
+# 帝皇战争：词义太宽、或会撞别的时代（列车组、天才俱乐部、公司部门、翁法罗斯的权杖、通用词）的钥匙都不要，靠专名触发
+EMP_STOP = set("""帝皇 第二次繁荣 第二次帝皇战争 认知 博识学会 博识尊 鲁珀特 联觉信标 信用点 铆钉 螺丝咕姆 智械 鲁珀特二世 清算 老板 弗莱明
+波尔卡 波尔卡•卡卡目 寂静领主 机械咕咕钟 血锦之纪 边星 流金 武装考古学派 浮黎 伊斯梅尔游行 #27 #4 鲍勃 善见天 预兆 戴帽的 亚德丽芬
+庇尔波因特 流光忆庭 螺丝星 护卫队 三次死亡 一切献给琥珀王 雇佣兵 手术刀 公司档案 机器头 迷思 鸡窝头侦探 列车护卫 战后清算 公司成立
+第二个路易斯•弗莱明 边缘星域 自我认知 虫皇遗留的子嗣 黑云蔽日的战争 阿哈的笑 诺伊
+漏税 欠条 卧底 自缢 钟塔 科考船 营养液 鸡窝头""".split())
+EMP_REMOVE = {}
+EMP_EXTRA = {
+    '鲁珀特': ['鲁珀特是谁', '鲁珀特的帝国', '垃圾堆里的皇帝'],
+    '糖果色裙子的女人': ['糖果裙子的女人', '寂静领主杀帝皇', '寂静领主在帝皇战争'],
+    '星神们在战争里': ['星神们在帝皇战争', '帝皇战争里的星神'],
+    '活事件：《清算》': ['清算官诺伊', '帝皇战争的清算'],
+    '伊斯梅尔与博识学会': ['帝皇战争时的博识学会', '学会与公司'],
+    '亚德丽芬': ['帝皇战争里的亚德丽芬'],
+    '列车与鲍勃': ['鸡窝头鲍勃', '领航员鲍勃'],
+    '博识尊与三个时刻': ['博识尊的三个时刻', '帝皇战争里的博识尊'],
+    '联觉信标与忆泡': ['信标复现', '联觉信标的复现'],
+    '东方启行与信用点': ['信用点是怎么来的', '信用点体系的建立'],
+}
+
 ERAS = [
     dict(tag='匹诺康尼', group='10｜匹诺康尼', core='wb_pen_core.md', archives='匹诺康尼_档案_第*批.md',
          sort_start=4541, sort_end=4977, STOP=PEN_STOP, REMOVE=PEN_REMOVE, EXTRA=PEN_EXTRA, old_prefix='10｜'),
@@ -226,6 +246,8 @@ ERAS = [
          sort_start=6201, sort_end=11754, STOP=AMP_STOP, REMOVE=AMP_REMOVE, EXTRA=AMP_EXTRA, old_prefix='12｜'),
     dict(tag='寰宇蝗灾', group='03｜寰宇蝗灾', core='wb_swm_core.md', archives='寰宇蝗灾_档案_第*批.md',
          sort_start=2045, sort_end=2449, STOP=SWM_STOP, REMOVE=SWM_REMOVE, EXTRA=SWM_EXTRA, old_prefix='03｜'),
+    dict(tag='帝皇战争', group='04｜边星贸易战争与第一次帝皇战争', core='wb_emp_core.md', archives='帝皇战争_档案_第*批.md',
+         sort_start=2451, sort_end=2947, STOP=EMP_STOP, REMOVE=EMP_REMOVE, EXTRA=EMP_EXTRA, old_prefix='04｜'),
 ]
 
 era_entries = {}   # tag -> (core_list, archive_list, keytable)
@@ -284,7 +306,7 @@ json.dump(d, open(OUT, 'w', encoding='utf-8'), ensure_ascii=False)
 lines = [f'# 世界书钥匙表（{VER}）', '',
          f'核心条目 {len(core_entries)} 条；' + '；'.join(
              f"{t}总览与示范 {len(era_entries[t][0])} 条、档案 {len(era_entries[t][1])} 条" for t in era_entries) +
-         f'；保留旧条目 {len(kept)} 条（共享资料与其余六个时代，当索引用）；删去旧条目 {removed} 条（旧全局运行、旧匹诺康尼包、旧雅利洛包、旧仙舟包、旧哈托彼亚包、旧翁法罗斯包、旧寰宇蝗灾包）。', '',
+         f'；保留旧条目 {len(kept)} 条（共享资料与其余五个时代，当索引用）；删去旧条目 {removed} 条（旧全局运行、旧匹诺康尼包、旧雅利洛包、旧仙舟包、旧哈托彼亚包、旧翁法罗斯包、旧寰宇蝗灾包、旧帝皇战争包）。', '',
          '## 核心运行']
 for e in core_entries:
     lines.append(f"- {e['value'].splitlines()[0].lstrip('# ')}｜深度{e['depth']}｜钥匙 `{e['key'][:60]}`｜{len(e['value'])}字")
