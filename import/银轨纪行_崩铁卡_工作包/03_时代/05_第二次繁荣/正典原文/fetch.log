@@ -1,0 +1,20 @@
+ok 1 血锦之纪徽章 579
+ok 2 血锦之纪徽章（典藏版） 254
+ok 3 「星间旅行」 22395
+ok 4 星炬航标 458
+ok 5 未抵故事集 1310
+ok 6 万色返空主，归寂•「住」 5639
+ok 7 星神逃生指南 1409
+ok 8 天才俱乐部＃55余清涂 7263
+ok 9 粉红冲撞 669
+ok 10 塔拉毒火焰 764
+FAIL 11 死水深潜的先驱 HTTP Error 567: Unknown Status
+ok 12 寄给无名客的包裹 7253
+ok 13 天灾遏止机关 829
+ok 14 终末之音 462
+FAIL 15 末日复眼•先行版 HTTP Error 567: Unknown Status
+FAIL 16 和平的代价 HTTP Error 567: Unknown Status
+FAIL 17 亚德丽芬 ERR The page you specified doesn't exist.
+ok 18 布拉琪的辞职信 1136
+ok 19 非概率藏宝图 1185
+fails: ['死水深潜的先驱', '末日复眼•先行版', '和平的代价', '亚德丽芬']
