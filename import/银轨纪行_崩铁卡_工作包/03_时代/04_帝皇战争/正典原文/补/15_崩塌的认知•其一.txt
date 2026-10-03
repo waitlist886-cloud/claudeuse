@@ -1,0 +1,112 @@
+编 刷 历 短 阅
+首页 > 模拟宇宙：不可知域 > 崩塌的认知•其一
+
+如果是第一次来，按"Ctrl+D"可以收藏随时查看更新~觉得WIKI好玩的话，请推荐给朋友哦～(◕ω＜)☆
+
+按右上角“WIKI功能→编辑”即可修改页面内容。
+
+模拟宇宙
+边星克罗斯特亚，云翳上的投影，相对认知学派的伊格莱情绪激昂，演讲在共计142个星域同步播出。
+
+    模拟宇宙
+「『知识』是编造的谎言，战争是争夺话语权的游戏。」博识学会在宇宙中建立了一种暴政，那就是，只有他们能决定什么是正确！
+
+    模拟宇宙
+你是一个落魄的学士…难民，或二者皆是的某个流浪汉。你蹒跚走进帝皇战争的重建区，只想求得三两口粮，养活家里的弟弟妹妹。伊格莱的信徒们焚烧图书，分发印有他画像的传单，他们将其戏称为：学派战争的入场券。
+
+    
+
+收下传单。
+拒绝传单。
+
+你
+收下传单。
+
+            模拟宇宙
+「联觉信标控制我们听到的一切，博识学会全都是一群骗子！」他们不再相信任何人。
+
+你
+拒绝传单。
+
+            模拟宇宙
+「能源危机是公司塑造的假象，否则，为什么那么多人衣食无忧，那么多人却饿死街头？」他们愤慨地吼道。
+
+(window.RLQ=window.RLQ||[]).push([ ["jquery"], function(){
+    $(function(){
+        $('.resourceLoader').each(function () {
+            var $x = $(this);
+            var text = $.trim($x.text());
+          
+            if (!text) return;
+          
+            //加载模块
+            if ($x.data('isModule') === true)
+                return mw.loader.load(text);
+            
+            //自动补充MediaWiki命名空间
+            var ns = text.match('^.*?:');
+            if (!ns) text = 'MediaWiki:' + text;
+          
+            //加载CSS样式表
+            var mime = ($x.data('mime') || "text/javascript").toLowerCase();
+            if (mime == "text/css") {
+                if (text.slice(-4).toLowerCase() !== '.css') text = text + '.css';
+                //if ($x.data('debug') !== true) text = text + '&debug=false';
+                return mw.loader.load("//wiki.biligame.com/" + mw.config.get("wgGameName") + "/index.php?title=" + text + "&action=raw&ctype=text/css", "text/css");
+            }
+          
+            //加载JS脚本
+            if (ns && ns[0].toLowerCase() !== 'mediawiki:') {
+                return console.log('ResourceLoader: 不允许加载MediaWiki以外的js脚本');
+            }
+            if (text.slice(-3).toLowerCase() !== '.js') text = text + '.js';
+            console.log('ResourceLoader: 加载' + text);
+            //if ($x.data('debug') !== true) text = text + '&debug=false';
+            return mw.loader.load("//wiki.biligame.com/" + mw.config.get("wgGameName") + "/index.php?title=" + text + "&action=raw&ctype=text/javascript", "text/javascript");
+        });
+    })
+}]);
+
+MediaWiki:PlotOptions
+
+    模拟宇宙
+只要有利可图，他们可以把红定义成蓝，白定义成黑。如若如此，那每个人都应有定义知识的权力！
+
+    模拟宇宙
+「我见寰宇本没有完美学者，亦或满大街都是完美学者！」在伊格莱振聋发聩的吼声里，吞噬弹炸毁了学会驻地的外墙。你们一拥而上，要让他们也体会到应得的苦难。现在，每个人都可以是相对认知学派的学士。
+
+    
+
+为宇宙带来真实。
+把骗子通通赶走。
+
+你
+为宇宙带来真实。
+
+            模拟宇宙
+「星神根本就不存在，一切都是假的！」你怒吼。
+
+你
+把骗子通通赶走。
+
+            模拟宇宙
+「学士们才是能源战争的根源，我们全都被蒙在鼓里！」你呐喊。
+
+    模拟宇宙
+支援的炮舰令天空失色，清算的机械落下，在各大学派的相互攻讦之前，必须掐灭相对认知的火星。你们试图撤出克罗斯特亚，但围剿的军团已将这里堵得水泄不通。
+
+    模拟宇宙
+在基地沦陷的前一秒，你按下了「权杖」的指令输入按钮，作为无声的呐喊。
+
+    
+
+筏工书法欧奇是否被。
+
+你
+筏工书法欧奇是否被。
+
+    模拟宇宙
+你无法再理解耳畔的话语。
+
+    模拟宇宙
+「权杖」摧毁了整个星域的联觉信标，你回到了没有欺骗与谎言的时代。在星间蔓延的呓语中，烛墨学派捕捉到谜语的气息，可他们也不清楚，记录本身是否也染上「神秘」。
