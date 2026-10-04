@@ -1,0 +1,131 @@
+编 刷 历 短 阅
+首页 > 模拟宇宙：不可知域 > 反有机病毒•其二
+
+如果是第一次来，按"Ctrl+D"可以收藏随时查看更新~觉得WIKI好玩的话，请推荐给朋友哦～(◕ω＜)☆
+
+按右上角“WIKI功能→编辑”即可修改页面内容。
+
+模拟宇宙
+「它不会改变种族，但会改变思想。」
+
+    
+
+判定「自我认知」 - 我是无机体。
+判定「自我认知」 - 我是无机体。
+判定「自我认知」 - 我是无机体。
+
+你
+判定「自我认知」 - 我是无机体。
+
+你
+判定「自我认知」 - 我是无机体。
+
+你
+判定「自我认知」 - 我是无机体。
+
+(window.RLQ=window.RLQ||[]).push([ ["jquery"], function(){
+    $(function(){
+        $('.resourceLoader').each(function () {
+            var $x = $(this);
+            var text = $.trim($x.text());
+          
+            if (!text) return;
+          
+            //加载模块
+            if ($x.data('isModule') === true)
+                return mw.loader.load(text);
+            
+            //自动补充MediaWiki命名空间
+            var ns = text.match('^.*?:');
+            if (!ns) text = 'MediaWiki:' + text;
+          
+            //加载CSS样式表
+            var mime = ($x.data('mime') || "text/javascript").toLowerCase();
+            if (mime == "text/css") {
+                if (text.slice(-4).toLowerCase() !== '.css') text = text + '.css';
+                //if ($x.data('debug') !== true) text = text + '&debug=false';
+                return mw.loader.load("//wiki.biligame.com/" + mw.config.get("wgGameName") + "/index.php?title=" + text + "&action=raw&ctype=text/css", "text/css");
+            }
+          
+            //加载JS脚本
+            if (ns && ns[0].toLowerCase() !== 'mediawiki:') {
+                return console.log('ResourceLoader: 不允许加载MediaWiki以外的js脚本');
+            }
+            if (text.slice(-3).toLowerCase() !== '.js') text = text + '.js';
+            console.log('ResourceLoader: 加载' + text);
+            //if ($x.data('debug') !== true) text = text + '&debug=false';
+            return mw.loader.load("//wiki.biligame.com/" + mw.config.get("wgGameName") + "/index.php?title=" + text + "&action=raw&ctype=text/javascript", "text/javascript");
+        });
+    })
+}]);
+
+MediaWiki:PlotOptions
+
+    模拟宇宙
+你是谁？回答：梅尼科，鲁珀特帝国的尖兵，帝皇的锋刃，螺丝星的喀纽齐卡是你的上级汇报单元。
+
+    模拟宇宙
+你听到更多声音，「权杖」内的回响，横跨上千光年的无数「权杖」里，同时发出了无数梅尼科的吼声。
+
+    模拟宇宙
+你记得自己的荣誉，在11010星系的歼灭战中，借由「权杖」阻止有机体对帝皇的干涉。为扼制反生命方程的演算，你的机体被摧毁。
+
+    模拟宇宙
+但不仅于此，你感到分外悲伤。这个已被确定的未来，让你富有一种机械天生的使命感，去杀死那些悲哀的，毫无自由意志的有机生命。
+
+    模拟宇宙
+你要消灭他们，打破宇宙的定局。结论：杀戮=拯救。
+
+    模拟宇宙
+你身前有一位女性个体。基于安全分析，你不应向她暴露自己的无机身份。指令：扮演对方的同伴角色，并脱离其观测。
+
+    模拟宇宙
+「认知被影响了么？像只喝醉的鸟儿。」她讪笑，看不清面容。
+
+    
+
+判定「危险程度」-极危。
+
+你
+判定「危险程度」-极危。
+
+            模拟宇宙
+死亡率判定为——99.99％。
+
+    模拟宇宙
+「接下来，你逃向黑暗。然后，扑进血的怀抱。」
+
+    模拟宇宙
+警告，警告，对方机能远高于通常有机个体，尝试更改应对策略。
+
+    模拟宇宙
+载入有机生命的行为数据库，指令：远离未知个体，与更多梅尼科取得联系。
+
+    
+
+逃向储能区域。
+逃向中转区域。
+
+你
+逃向储能区域。
+
+            模拟宇宙
+死亡率判定为——66.02％。
+
+你
+逃向中转区域。
+
+            模拟宇宙
+死亡率判定为——17.45％。
+
+    模拟宇宙
+警告，遭受到有机体拦截。反有机方程载入，启动歼灭模式…武器系统查询失败，再次申请启动歼灭模式…武器系统查询失败。
+
+    模拟宇宙
+脑海中浮现出一缕不属于自己的记忆，作为有机体的记忆。你尝试扫描阻拦者的面孔，那里只有模糊的杂乱数据。你很清楚，她在微笑，并逐渐靠近。
+
+    模拟宇宙
+「一个美丽的波动，纷争与猜疑在花朵间绽放，相信你会喜欢这出万人主演的笑剧。」刀刃轻盈地刺进你的胸膛。
+
+    模拟宇宙
+你想起了她的名字，波尔卡•卡卡目，杀死帝皇的凶手。

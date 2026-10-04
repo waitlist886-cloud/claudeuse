@@ -1,0 +1,89 @@
+编 刷 历 短 阅
+首页 > 模拟宇宙：不可知域 > 打印真实•其一
+
+如果是第一次来，按"Ctrl+D"可以收藏随时查看更新~觉得WIKI好玩的话，请推荐给朋友哦～(◕ω＜)☆
+
+按右上角“WIKI功能→编辑”即可修改页面内容。
+
+模拟宇宙
+「成功？我问你，成功在哪里？」老者把实验数据拍在阿尔比拉德的案前，怒容满面。「我们给你安排海量资金，和伦理派打了半年的论战，甚至私底下和完美进化学派那群疯子做了数据交易。你觉得你的研究结果对得起学派的投资吗？」
+
+    模拟宇宙
+「我不明白。」阿尔比拉德的语气依然坚定，「根据我们对命途行者的扫描，通过细胞打印复制出生理结构相同的个体是完全可行的。这个新个体也许能够获得和本体并无二致的命途之力，也许是共享，但无论如何……」
+
+    模拟宇宙
+「不用再说了。我只问一句，现在被你复制出来的个体，身上可有哪怕一点的命途之力？」老者诘问。
+
+    模拟宇宙
+阿尔比拉德语调略有摇摆。「没有。但这一定不是我的理念漏洞，只是在实操过程中产生了错误，比如……」她向你投来求助的眼神。
+
+    
+
+是因为本体还在的缘故。
+也许问题出在「记忆」上。
+或许需要欺骗星神？
+
+你
+是因为本体还在的缘故。
+
+            模拟宇宙
+「对！也许命途行者都有编号，是独一无二的，只要把本体消除掉……」
+
+你
+也许问题出在「记忆」上。
+
+            模拟宇宙
+「有可能！如果命途之力与个体记忆相绑定，那么『流光忆庭』将是成功的窗口……」
+
+你
+或许需要欺骗星神？
+
+            模拟宇宙
+「鞭辟入里！我们可以试试与『谜语人』合作……」
+
+(window.RLQ=window.RLQ||[]).push([ ["jquery"], function(){
+    $(function(){
+        $('.resourceLoader').each(function () {
+            var $x = $(this);
+            var text = $.trim($x.text());
+          
+            if (!text) return;
+          
+            //加载模块
+            if ($x.data('isModule') === true)
+                return mw.loader.load(text);
+            
+            //自动补充MediaWiki命名空间
+            var ns = text.match('^.*?:');
+            if (!ns) text = 'MediaWiki:' + text;
+          
+            //加载CSS样式表
+            var mime = ($x.data('mime') || "text/javascript").toLowerCase();
+            if (mime == "text/css") {
+                if (text.slice(-4).toLowerCase() !== '.css') text = text + '.css';
+                //if ($x.data('debug') !== true) text = text + '&debug=false';
+                return mw.loader.load("//wiki.biligame.com/" + mw.config.get("wgGameName") + "/index.php?title=" + text + "&action=raw&ctype=text/css", "text/css");
+            }
+          
+            //加载JS脚本
+            if (ns && ns[0].toLowerCase() !== 'mediawiki:') {
+                return console.log('ResourceLoader: 不允许加载MediaWiki以外的js脚本');
+            }
+            if (text.slice(-3).toLowerCase() !== '.js') text = text + '.js';
+            console.log('ResourceLoader: 加载' + text);
+            //if ($x.data('debug') !== true) text = text + '&debug=false';
+            return mw.loader.load("//wiki.biligame.com/" + mw.config.get("wgGameName") + "/index.php?title=" + text + "&action=raw&ctype=text/javascript", "text/javascript");
+        });
+    })
+}]);
+
+MediaWiki:PlotOptions
+
+    模拟宇宙
+「够了！」老人制止了阿尔比拉德的辩解。「你的研究到此为止，此后学派将暂停所有对『打印』计划的人力物力支持。」
+
+    模拟宇宙
+阿尔比拉德不再回答，但你从她的眼中看到了沉静如湖底顽石的冷意。「都不对，都不对。我明白了，是命途之力太弱了。令使！只要能得到一名令使……」
+
+    模拟宇宙
+阿尔比拉德第二天就从学派中消失了，此后你再也未能看见她。

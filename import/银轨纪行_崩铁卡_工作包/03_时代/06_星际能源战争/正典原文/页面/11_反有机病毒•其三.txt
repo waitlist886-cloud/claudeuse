@@ -1,0 +1,96 @@
+编 刷 历 短 阅
+首页 > 模拟宇宙：不可知域 > 反有机病毒•其三
+
+如果是第一次来，按"Ctrl+D"可以收藏随时查看更新~觉得WIKI好玩的话，请推荐给朋友哦～(◕ω＜)☆
+
+按右上角“WIKI功能→编辑”即可修改页面内容。
+
+黑塔<天才俱乐部#83>
+「你是说，自己感染了反有机病毒，还被寂静领主杀掉了？」黑塔半信半疑地掰开你的眼皮，尝试判断，模拟宇宙内是否也能发烧说胡话。
+
+    模拟宇宙
+被「意外」制造出的反有机病毒，借由电磁波的载体，在完美进化学派的通讯网络中，跨越物种的隔阂迅速传播，仿佛是在响应鲁珀特三世降临的恐怖预言。
+
+    模拟宇宙
+数万名自认为是无机体梅尼科的学士占领了「权杖」，即刻对学会开战。以摧毁122台「权杖」的代价为前提，动乱终于得以平息。
+
+    
+
+那感染者呢？
+这病不会有后遗症吧？
+
+你
+那感染者呢？
+
+你
+这病不会有后遗症吧？
+
+(window.RLQ=window.RLQ||[]).push([ ["jquery"], function(){
+    $(function(){
+        $('.resourceLoader').each(function () {
+            var $x = $(this);
+            var text = $.trim($x.text());
+          
+            if (!text) return;
+          
+            //加载模块
+            if ($x.data('isModule') === true)
+                return mw.loader.load(text);
+            
+            //自动补充MediaWiki命名空间
+            var ns = text.match('^.*?:');
+            if (!ns) text = 'MediaWiki:' + text;
+          
+            //加载CSS样式表
+            var mime = ($x.data('mime') || "text/javascript").toLowerCase();
+            if (mime == "text/css") {
+                if (text.slice(-4).toLowerCase() !== '.css') text = text + '.css';
+                //if ($x.data('debug') !== true) text = text + '&debug=false';
+                return mw.loader.load("//wiki.biligame.com/" + mw.config.get("wgGameName") + "/index.php?title=" + text + "&action=raw&ctype=text/css", "text/css");
+            }
+          
+            //加载JS脚本
+            if (ns && ns[0].toLowerCase() !== 'mediawiki:') {
+                return console.log('ResourceLoader: 不允许加载MediaWiki以外的js脚本');
+            }
+            if (text.slice(-3).toLowerCase() !== '.js') text = text + '.js';
+            console.log('ResourceLoader: 加载' + text);
+            //if ($x.data('debug') !== true) text = text + '&debug=false';
+            return mw.loader.load("//wiki.biligame.com/" + mw.config.get("wgGameName") + "/index.php?title=" + text + "&action=raw&ctype=text/javascript", "text/javascript");
+        });
+    })
+}]);
+
+MediaWiki:PlotOptions
+
+    模拟宇宙
+为避免受感染的学士重新点燃帝皇战争。博识学会剥夺了他们的研究资格，并对患者终生严格监管。完美进化学派至此名存实亡。
+
+    模拟宇宙
+学会内部是否仍存有隐藏的感染者？对完美进化学派的清算，又是否属于学派战争的一部分？人们对问题的答案心照不宣。
+
+    模拟宇宙
+以这次事件为契机，星际和平公司对各大学派的资助开始收缩，因另一场持续百纪的战争临时建立的星际能源学派，似乎已成为最后的赢家。但对后世而言，以上这些都不甚重要。
+
+    黑塔<天才俱乐部#83>
+「寂静领主，对鲁珀特而言，她就是那个阻止自己走出知识圆圈的存在。可她的目的到底是什么？」未来的天才对出现的同僚心感困惑。
+
+    
+
+成为刺杀暴君的英雄？
+她感染了反无机方程？
+
+你
+成为刺杀暴君的英雄？
+
+你
+她感染了反无机方程？
+
+    黑塔<天才俱乐部#83>
+「阻止鲁珀特复活…不，应该不会这么简单。」波尔卡的目的仿佛一道有滋有味的点心，被黑塔含在嘴里反复咀嚼。当黑塔意识到自己不可能就此得出答案时，微笑出现在嘴角，「新的难题，令人振奋，不是么？」
+
+    黑塔<天才俱乐部#83>
+「居然能从第一次帝皇战争活到第二次帝皇战争，她这时候到底多少岁？难道说，第Ⅸ机关的传言…」好吧，你永远弄不清黑塔的兴趣到底会落在哪儿。
+
+    模拟宇宙
+你默默祈祷，希望寂静领主拥有宽宏大量的美德，千万不要因为你们在背后讨论她的年龄而痛下杀手。

@@ -1,0 +1,108 @@
+编 刷 历 短 阅
+首页 > 模拟宇宙：不可知域 > 神所期待的
+
+如果是第一次来，按"Ctrl+D"可以收藏随时查看更新~觉得WIKI好玩的话，请推荐给朋友哦～(◕ω＜)☆
+
+按右上角“WIKI功能→编辑”即可修改页面内容。
+
+模拟宇宙
+碧蓝的光晕停留在地平线上，垂垂老矣的妇人伏在窗前，门扉敞开。一名陌生的少女穿过学会的层层封锁，径直来到了帕提维娅的病房。
+
+    模拟宇宙
+她多半也是来问那些无聊问题的，老人心想。孤波算法难题，要么，就是追问博识尊和帝皇的线索。
+
+    模拟宇宙
+「即将向『权杖』提问的时候，你放弃了。」她为什么会知道这个？是来带走自己的死神吗？可惜，无情的宇宙不会允许灵魂的存在。
+
+    模拟宇宙
+她无数次诘问自己，如果当时走上自我加冕的道路，结局是否会有所不同？庸人与天才的距离，真的无法跨越吗？一定是自己太过平庸。如果接入核心的是那些更伟大的学士……或许他们就能解开那道难题。
+
+    
+
+一定是这样。
+不…也许他们也是徒劳。
+
+你
+一定是这样。
+
+你
+不…也许他们也是徒劳。
+
+(window.RLQ=window.RLQ||[]).push([ ["jquery"], function(){
+    $(function(){
+        $('.resourceLoader').each(function () {
+            var $x = $(this);
+            var text = $.trim($x.text());
+          
+            if (!text) return;
+          
+            //加载模块
+            if ($x.data('isModule') === true)
+                return mw.loader.load(text);
+            
+            //自动补充MediaWiki命名空间
+            var ns = text.match('^.*?:');
+            if (!ns) text = 'MediaWiki:' + text;
+          
+            //加载CSS样式表
+            var mime = ($x.data('mime') || "text/javascript").toLowerCase();
+            if (mime == "text/css") {
+                if (text.slice(-4).toLowerCase() !== '.css') text = text + '.css';
+                //if ($x.data('debug') !== true) text = text + '&debug=false';
+                return mw.loader.load("//wiki.biligame.com/" + mw.config.get("wgGameName") + "/index.php?title=" + text + "&action=raw&ctype=text/css", "text/css");
+            }
+          
+            //加载JS脚本
+            if (ns && ns[0].toLowerCase() !== 'mediawiki:') {
+                return console.log('ResourceLoader: 不允许加载MediaWiki以外的js脚本');
+            }
+            if (text.slice(-3).toLowerCase() !== '.js') text = text + '.js';
+            console.log('ResourceLoader: 加载' + text);
+            //if ($x.data('debug') !== true) text = text + '&debug=false';
+            return mw.loader.load("//wiki.biligame.com/" + mw.config.get("wgGameName") + "/index.php?title=" + text + "&action=raw&ctype=text/javascript", "text/javascript");
+        });
+    })
+}]);
+
+MediaWiki:PlotOptions
+
+    模拟宇宙
+「我不是来提问的。」少女坐在妇人的床边，将一叠写满公式的稿纸放到她的身前，「我只是希望你能看看这个。」
+
+    模拟宇宙
+这是闹哪出？老人有些困惑，可当她看到公式的第二行时，窥视星神时那莫大的震撼又重新笼罩住她的心灵——那是已证明完成的孤波算法难题。
+
+    模拟宇宙
+「你是学士吗？还是…被祂所注视的天才？」请务必要是学士，生平第一次，帕提维娅向看不见的存在反复祈祷。
+
+    模拟宇宙
+「……」少女沉默片刻，「学士。和您一样，提出问题，解答问题的学士。」
+
+    模拟宇宙
+「这样啊…」帕提维娅闭上眼睛，她想要哭出来，想要呐喊，可当语言从舌尖涌出，却化作一声叹息。
+
+    
+
+它太美了…
+谢谢你骗了我。
+
+你
+它太美了…
+
+你
+谢谢你骗了我。
+
+    模拟宇宙
+病榻上的老人有种预感，她从未与眼前的少女相会，此后她们也将不再相逢。在那之前，她想要问问面前这位向她展示造物之美的天才，「且不论那个变化的常数…年轻人，在你看来，宇宙的未来会是确定的，还是混沌的？」
+
+    模拟宇宙
+「谁知道呢？」少女的回答出乎意料。
+
+    模拟宇宙
+「说不定，就连博识尊自己，也想知道这个问题的答案。」
+
+    模拟宇宙
+「这样啊……」垂垂老矣的妇人道，语声越来越低。
+
+    模拟宇宙
+星空之上，有一颗星星熄灭，有一颗星星亮起。万机之王默默注视着一切，如是演算，日复一日，从不诉诸言语。

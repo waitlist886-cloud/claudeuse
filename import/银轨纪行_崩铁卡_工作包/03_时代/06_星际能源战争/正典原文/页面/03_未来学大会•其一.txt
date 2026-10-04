@@ -1,0 +1,109 @@
+编 刷 历 短 阅
+首页 > 模拟宇宙：不可知域 > 未来学大会•其一
+
+如果是第一次来，按"Ctrl+D"可以收藏随时查看更新~觉得WIKI好玩的话，请推荐给朋友哦～(◕ω＜)☆
+
+按右上角“WIKI功能→编辑”即可修改页面内容。
+
+模拟宇宙
+帝皇陨落后，针对无机生命的清算和复仇使帝皇的遗产严重受损。
+
+    模拟宇宙
+经过一番抢救，博识学会面临一个问题：该如何公平地利用「权杖」解算问题，为学会带来最大的利益？这不啻是一道难解算式。
+
+    模拟宇宙
+公正与辩论之星斯波菲亚，瓜分战利品的「未来学大会」，享用鲁珀特魂灵的宴席。学士们像肥皂泡般将看台挤满，你穿过人潮的缝隙，站到报告会场的前沿。
+
+    模拟宇宙
+大会将决定「权杖」的分配，谁的课题更有价值？谁能解决未来的难题？谁便成为遗产的新主人——至少名义上如此。「权杖」在帝国废墟中星罗棋布，与会的你们也各怀异心。
+
+    
+
+我来看热闹的。
+我要支配学会！
+我要反抗公司！
+
+你
+我来看热闹的。
+
+            模拟宇宙
+你只是听说参会有免费的餐饮供应。
+
+你
+我要支配学会！
+
+            模拟宇宙
+没错！把无用的愚人都踩在脚底！
+
+你
+我要反抗公司！
+
+            模拟宇宙
+摆脱那群该死的白痴对知识的控制。
+
+(window.RLQ=window.RLQ||[]).push([ ["jquery"], function(){
+    $(function(){
+        $('.resourceLoader').each(function () {
+            var $x = $(this);
+            var text = $.trim($x.text());
+          
+            if (!text) return;
+          
+            //加载模块
+            if ($x.data('isModule') === true)
+                return mw.loader.load(text);
+            
+            //自动补充MediaWiki命名空间
+            var ns = text.match('^.*?:');
+            if (!ns) text = 'MediaWiki:' + text;
+          
+            //加载CSS样式表
+            var mime = ($x.data('mime') || "text/javascript").toLowerCase();
+            if (mime == "text/css") {
+                if (text.slice(-4).toLowerCase() !== '.css') text = text + '.css';
+                //if ($x.data('debug') !== true) text = text + '&debug=false';
+                return mw.loader.load("//wiki.biligame.com/" + mw.config.get("wgGameName") + "/index.php?title=" + text + "&action=raw&ctype=text/css", "text/css");
+            }
+          
+            //加载JS脚本
+            if (ns && ns[0].toLowerCase() !== 'mediawiki:') {
+                return console.log('ResourceLoader: 不允许加载MediaWiki以外的js脚本');
+            }
+            if (text.slice(-3).toLowerCase() !== '.js') text = text + '.js';
+            console.log('ResourceLoader: 加载' + text);
+            //if ($x.data('debug') !== true) text = text + '&debug=false';
+            return mw.loader.load("//wiki.biligame.com/" + mw.config.get("wgGameName") + "/index.php?title=" + text + "&action=raw&ctype=text/javascript", "text/javascript");
+        });
+    })
+}]);
+
+MediaWiki:PlotOptions
+
+    模拟宇宙
+斯坦德•卡德尔走上演讲台，星空生态学派的首席学士。锐利的复眼把争论包裹，他轻咳一声，旋即将噪音溺毙。
+
+    模拟宇宙
+完美学者，求知者的终极理想，在「智识」尚未诞生的年代，便已具价值的词语。无穷的生命，无穷的视域，无穷的思维，而后知识亦向他俯首称臣。
+
+    模拟宇宙
+「集所有算力于一人，为他求得问神的机会，铺垫天才的道路，创造出学会的完美学者。」他的目光里满是癫狂，「一百万个庸才的难题，和一个天才的灵感，哪个更有价值？答案不言自明。」
+
+    模拟宇宙
+沸腾的人群里，一缕影子留下香甜而危险的气息，引开你的注意。学士服下的糖果色纱裙，陌生的女人正同旁人交谈。你看不清她的面孔，透过喧嚣与叫骂，只能隐约听到些许词句。
+
+    
+
+寻找那道气息。
+搜索人群中那抹糖果色。
+
+你
+寻找那道气息。
+
+你
+搜索人群中那抹糖果色。
+
+    模拟宇宙
+「未来？呵，未来，何必匆匆向前呢。星际能源战争，它需要更长的时间来沉淀。」声音像是讽刺，带着雀跃，「你问我？就当是…来为心理历史学派扫墓的老友吧。」
+
+    模拟宇宙
+你没找到任何东西。

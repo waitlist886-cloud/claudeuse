@@ -1,0 +1,90 @@
+编 刷 历 短 阅
+首页 > 模拟宇宙：不可知域 > 打印真实•其三
+
+如果是第一次来，按"Ctrl+D"可以收藏随时查看更新~觉得WIKI好玩的话，请推荐给朋友哦～(◕ω＜)☆
+
+按右上角“WIKI功能→编辑”即可修改页面内容。
+
+模拟宇宙
+在夏季三轮例会的一开始，克丝黛拉就冲着你所在的元老位慷慨陈词。「我们应当正视科研实用主义在学派中的负面效益，它已经对年轻学者的研究热情产生了巨大阻碍。」
+
+    模拟宇宙
+「克丝黛拉，你是这些年唯一一个对学派核心研究精神提出质疑的人。你为什么认为自己能够代表年轻学者？」一位白须苍髯的学者说。
+
+    模拟宇宙
+克丝黛拉发出一声冷笑。「我当然能代表，因为我就是学派内屈指可数的年轻学者之一。阿蒙徳，四十五岁，会龄十三年；克里斯托弗，三十九岁，会龄八年；我，三十三岁，会龄五年。前辈，您猜猜，年轻人的研究理想是什么？」克丝黛拉用手指向你。
+
+    
+
+无垠时空的谜底？
+终极智慧的样貌？
+完美社会的发动机？
+
+你
+无垠时空的谜底？
+
+你
+终极智慧的样貌？
+
+你
+完美社会的发动机？
+
+(window.RLQ=window.RLQ||[]).push([ ["jquery"], function(){
+    $(function(){
+        $('.resourceLoader').each(function () {
+            var $x = $(this);
+            var text = $.trim($x.text());
+          
+            if (!text) return;
+          
+            //加载模块
+            if ($x.data('isModule') === true)
+                return mw.loader.load(text);
+            
+            //自动补充MediaWiki命名空间
+            var ns = text.match('^.*?:');
+            if (!ns) text = 'MediaWiki:' + text;
+          
+            //加载CSS样式表
+            var mime = ($x.data('mime') || "text/javascript").toLowerCase();
+            if (mime == "text/css") {
+                if (text.slice(-4).toLowerCase() !== '.css') text = text + '.css';
+                //if ($x.data('debug') !== true) text = text + '&debug=false';
+                return mw.loader.load("//wiki.biligame.com/" + mw.config.get("wgGameName") + "/index.php?title=" + text + "&action=raw&ctype=text/css", "text/css");
+            }
+          
+            //加载JS脚本
+            if (ns && ns[0].toLowerCase() !== 'mediawiki:') {
+                return console.log('ResourceLoader: 不允许加载MediaWiki以外的js脚本');
+            }
+            if (text.slice(-3).toLowerCase() !== '.js') text = text + '.js';
+            console.log('ResourceLoader: 加载' + text);
+            //if ($x.data('debug') !== true) text = text + '&debug=false';
+            return mw.loader.load("//wiki.biligame.com/" + mw.config.get("wgGameName") + "/index.php?title=" + text + "&action=raw&ctype=text/javascript", "text/javascript");
+        });
+    })
+}]);
+
+MediaWiki:PlotOptions
+
+    模拟宇宙
+「您心知肚明！」克丝黛拉拍案而起，「年轻学者需要宏观梦想！需要科学边界！需要狂热的信仰！而不是谨小慎微，把质能解构作为起点也作为终点。你们曾经逼走阿尔比拉德，很可能，我就是下一个。」
+
+    模拟宇宙
+「我们了解你的诉求。」另一位老人叹了口气，「可是，我们没法扭转学派从上到下信奉了数十年的理念。我们只能一条道走到黑，在学派彻底断代之前，尽可能多地为中心命题做出贡献。」
+
+    模拟宇宙
+「也许不一定要生产新血，输入新血就可以了。」克丝黛拉的语气忽然缓和下来，「诸位前辈可曾听说『伊斯梅尔』游行之后，那群籍籍无名的年轻学者？」
+
+    模拟宇宙
+老学者惊呼：「你是说『庸众院』，那群无礼的乡野匹夫！你竟然要把他们粗鲁的血输进纯粹造物学派的静脉中？不可，决计不可！」
+
+    
+
+我倒认为是条活路。
+
+你
+我倒认为是条活路。
+
+    模拟宇宙
+克丝黛拉向你鞠了一躬，随后转向愕然的几位学派元老。「学派的研究进入瓶颈、人才青黄不接，还请原谅我的先斩后奏。我已派人与『庸众院』商议合作之事，我将把宝押在新的时代。」

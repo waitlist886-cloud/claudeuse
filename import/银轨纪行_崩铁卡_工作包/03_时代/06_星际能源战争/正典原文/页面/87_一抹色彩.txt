@@ -1,0 +1,145 @@
+编 刷 历 短 阅
+首页 > 模拟宇宙> 事件一览 > 一抹色彩
+
+如果是第一次来，按"Ctrl+D"可以收藏随时查看更新~觉得WIKI好玩的话，请推荐给朋友哦～(◕ω＜)☆
+
+按右上角“WIKI功能→编辑”即可修改页面内容。
+
+一抹色彩
+
+模式人间喜剧
+千面英雄
+乐园漫记
+
+实装版本2.5
+选项
+淡金色。
+获得200宇宙碎片。
+血红色。
+获得2个随机1-2星奇物。
+深灰色。
+获得2个随机1-2星祝福。
+
+  
+    人间喜剧
+千面英雄
+乐园漫记
+
+    模拟宇宙
+你走进阴暗的档案资料馆，库存史料散发出腐朽的气息，看台中央，执笔的画家正在用调色盘配置颜料。
+
+  模拟宇宙
+「烛墨学派，无名无姓的学士，你没有记住我的理由。」
+
+  模拟宇宙
+画家长叹了口气，咬住画笔，似是纠结如何收尾。「最后一笔，无名客，在你看来，历史是什么颜色？」
+
+  
+
+选择
+
+(window.RLQ=window.RLQ||[]).push([ ["jquery"], function(){
+    $(function(){
+        $('.resourceLoader').each(function () {
+            var $x = $(this);
+            var text = $.trim($x.text());
+          
+            if (!text) return;
+          
+            //加载模块
+            if ($x.data('isModule') === true)
+                return mw.loader.load(text);
+            
+            //自动补充MediaWiki命名空间
+            var ns = text.match('^.*?:');
+            if (!ns) text = 'MediaWiki:' + text;
+          
+            //加载CSS样式表
+            var mime = ($x.data('mime') || "text/javascript").toLowerCase();
+            if (mime == "text/css") {
+                if (text.slice(-4).toLowerCase() !== '.css') text = text + '.css';
+                //if ($x.data('debug') !== true) text = text + '&debug=false';
+                return mw.loader.load("//wiki.biligame.com/" + mw.config.get("wgGameName") + "/index.php?title=" + text + "&action=raw&ctype=text/css", "text/css");
+            }
+          
+            //加载JS脚本
+            if (ns && ns[0].toLowerCase() !== 'mediawiki:') {
+                return console.log('ResourceLoader: 不允许加载MediaWiki以外的js脚本');
+            }
+            if (text.slice(-3).toLowerCase() !== '.js') text = text + '.js';
+            console.log('ResourceLoader: 加载' + text);
+            //if ($x.data('debug') !== true) text = text + '&debug=false';
+            return mw.loader.load("//wiki.biligame.com/" + mw.config.get("wgGameName") + "/index.php?title=" + text + "&action=raw&ctype=text/javascript", "text/javascript");
+        });
+    })
+}]);
+
+MediaWiki:PlotOptions
+
+  
+
+淡金色。
+
+获得200宇宙碎片。
+确定
+
+血红色。
+
+获得2个随机1-2星奇物。
+确定
+
+深灰色。
+
+获得2个随机1-2星祝福。
+确定
+
+淡金色。
+
+获得300宇宙碎片。
+确定
+
+血红色。
+
+获得3个随机1-2星奇物。
+确定
+
+深灰色。
+
+获得3个随机1-2星祝福。
+确定
+
+你
+淡金色。
+
+    模拟宇宙
+「星际和平公司在千余个琥珀纪中扮演着重要的角色，但要我说，他们只是这张画上的污点。」画家发出轻蔑的笑声。
+
+你
+血红色。
+
+    模拟宇宙
+「死亡与鲜血无处不在，星际能源战争和第二次帝皇战争几乎在同时兴起，但帝皇手上的鲜血远不如有机体自身浓艳。」画家缓缓抬手，为画布增添上猩红。
+
+你
+深灰色。
+
+    模拟宇宙
+「总有人试图为时间注解特征，虚构史学家试图为鲁珀特杜撰过去，但在时间面前，这些挣扎毫无意义。」画家落笔之重，差些把画布捅穿。
+
+你
+淡金色。
+
+    模拟宇宙
+「星际和平公司在千余个琥珀纪中扮演着重要的角色，但要我说，他们只是这张画上的污点。」画家发出轻蔑的笑声。
+
+你
+血红色。
+
+    模拟宇宙
+「死亡与鲜血无处不在，星际能源战争和第二次帝皇战争几乎在同时兴起，但帝皇手上的鲜血远不如有机体自身浓艳。」画家缓缓抬手，为画布增添上猩红。
+
+你
+深灰色。
+
+    模拟宇宙
+「总有人试图为时间注解特征，虚构史学家试图为鲁珀特杜撰过去，但在时间面前，这些挣扎毫无意义。」画家落笔之重，差些把画布捅穿。

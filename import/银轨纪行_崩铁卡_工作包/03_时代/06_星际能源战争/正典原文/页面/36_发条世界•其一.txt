@@ -1,0 +1,99 @@
+编 刷 历 短 阅
+首页 > 模拟宇宙：不可知域 > 发条世界•其一
+
+如果是第一次来，按"Ctrl+D"可以收藏随时查看更新~觉得WIKI好玩的话，请推荐给朋友哦～(◕ω＜)☆
+
+按右上角“WIKI功能→编辑”即可修改页面内容。
+
+模拟宇宙
+老人将自己埋在乱如鸟窠的文牍之中。「普通人寻仇不会想到要来求助学者，你是第一个，况且你该去找量子历史学派的那群弄潮儿，而不是找我这个前朝遗老。」
+
+    
+
+我信仰您。
+
+你
+我信仰您。
+
+(window.RLQ=window.RLQ||[]).push([ ["jquery"], function(){
+    $(function(){
+        $('.resourceLoader').each(function () {
+            var $x = $(this);
+            var text = $.trim($x.text());
+          
+            if (!text) return;
+          
+            //加载模块
+            if ($x.data('isModule') === true)
+                return mw.loader.load(text);
+            
+            //自动补充MediaWiki命名空间
+            var ns = text.match('^.*?:');
+            if (!ns) text = 'MediaWiki:' + text;
+          
+            //加载CSS样式表
+            var mime = ($x.data('mime') || "text/javascript").toLowerCase();
+            if (mime == "text/css") {
+                if (text.slice(-4).toLowerCase() !== '.css') text = text + '.css';
+                //if ($x.data('debug') !== true) text = text + '&debug=false';
+                return mw.loader.load("//wiki.biligame.com/" + mw.config.get("wgGameName") + "/index.php?title=" + text + "&action=raw&ctype=text/css", "text/css");
+            }
+          
+            //加载JS脚本
+            if (ns && ns[0].toLowerCase() !== 'mediawiki:') {
+                return console.log('ResourceLoader: 不允许加载MediaWiki以外的js脚本');
+            }
+            if (text.slice(-3).toLowerCase() !== '.js') text = text + '.js';
+            console.log('ResourceLoader: 加载' + text);
+            //if ($x.data('debug') !== true) text = text + '&debug=false';
+            return mw.loader.load("//wiki.biligame.com/" + mw.config.get("wgGameName") + "/index.php?title=" + text + "&action=raw&ctype=text/javascript", "text/javascript");
+        });
+    })
+}]);
+
+MediaWiki:PlotOptions
+
+    模拟宇宙
+「何人？何时？何处？」你一一报上。老人闭上眼睛。你听得他的呼吸声，带着一种韵律，一张一翕一收一放，如同振翅又如织机。半晌，老人睁开眼。
+
+    模拟宇宙
+「你只要做一件事：当地时间七月五日上午十点，在白鸽广场喷泉处投下一枚五分硬币，然后爬到钟楼顶静静欣赏就可以了。」
+
+    
+
+只要这样就可以了吗？
+
+你
+只要这样就可以了吗？
+
+    模拟宇宙
+「是的。不要做多余的事。你只要相信，少了一颗钉子，将失一个国家。」
+
+    模拟宇宙
+你牢记着他的锦囊妙计，当天准时来到白鸽广场，摸出一枚五分硬币丢出去。硬币落在天使塑像的手上。你登上钟楼，推窗远眺时，惊起一只栖息在窗台的乌鸦。
+
+    模拟宇宙
+五分钟后，乌鸦被天使雕像手上的五分硬币吸引。一分钟后，它被一群白鸽袭击，衔在嘴里的硬币坠在地上，半个币身嵌入地砖的缝隙。两分钟后，一辆马车疾驰而来，碾过硬币并剧烈颠簸，马车倾倒、马匹脱缰，受惊的马狂奔而出，离开广场并撞上满载易燃品的板车。
+
+    模拟宇宙
+当你看到那从街角开始蔓延的火焰逐渐失去控制时，你知道你的夙愿将要实现了——一场完美谋杀。你的仇人此刻就在那个街角的宾馆午睡，你用望远镜观察了他葬身火场的全程。你燥热难耐，浑身是汗。
+
+    
+
+复仇是如此令人畅快。
+现在我该离开了。
+
+你
+复仇是如此令人畅快。
+
+            模拟宇宙
+你不是因为复仇而大汗淋漓。
+
+你
+现在我该离开了。
+
+            模拟宇宙
+你不能走。
+
+    模拟宇宙
+火势已经蔓延了过来。你颓然地倒在墙角。一切都被算好了，你自己也身处蝴蝶振翅的『糖果色』风暴里。如果可以的话，你很想拔枪请那老头吃个钢豆，然后问他，这你可曾预见到？——但你已经没有机会了。

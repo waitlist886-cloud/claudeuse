@@ -1,0 +1,74 @@
+编 刷 历 短 阅
+首页 > 模拟宇宙：寰宇蝗灾 > 「欢愉Ⅰ」
+
+如果是第一次来，按"Ctrl+D"可以收藏随时查看更新~觉得WIKI好玩的话，请推荐给朋友哦～(◕ω＜)☆
+
+按右上角“WIKI功能→编辑”即可修改页面内容。
+
+模拟宇宙
+你在原地等待——直至笑声突然出现，你一点也笑不出来。一些火花般的快乐又跳了出来，你甚至怀疑这些快乐长出了手脚，在你身边舞动…你对祂的到来多少有些畏惧，却又感到熟悉——没有谁像祂一样毫不防备、毫无虚伪！
+
+阿哈<欢愉>
+「阿基维利！」阿哈就这么堂堂正正地出现了，「我的阿基维利！我给你的骰子好玩吗？我要提问：我的骰子有几个面？」
+
+可是你的骰子是个球。
+你就是个球！
+
+阿哈<欢愉>
+「回答正确！我想用球把塔伊兹育罗斯砸晕！」
+
+阿哈<欢愉>
+「是吗？可能还真是…阿基维利——你想到的比我更多！我忍不住想抱抱你了！」
+
+(window.RLQ=window.RLQ||[]).push([ ["jquery"], function(){
+    $(function(){
+        $('.resourceLoader').each(function () {
+            var $x = $(this);
+            var text = $.trim($x.text());
+          
+            if (!text) return;
+          
+            //加载模块
+            if ($x.data('isModule') === true)
+                return mw.loader.load(text);
+            
+            //自动补充MediaWiki命名空间
+            var ns = text.match('^.*?:');
+            if (!ns) text = 'MediaWiki:' + text;
+          
+            //加载CSS样式表
+            var mime = ($x.data('mime') || "text/javascript").toLowerCase();
+            if (mime == "text/css") {
+                if (text.slice(-4).toLowerCase() !== '.css') text = text + '.css';
+                //if ($x.data('debug') !== true) text = text + '&debug=false';
+                return mw.loader.load("//wiki.biligame.com/" + mw.config.get("wgGameName") + "/index.php?title=" + text + "&action=raw&ctype=text/css", "text/css");
+            }
+          
+            //加载JS脚本
+            if (ns && ns[0].toLowerCase() !== 'mediawiki:') {
+                return console.log('ResourceLoader: 不允许加载MediaWiki以外的js脚本');
+            }
+            if (text.slice(-3).toLowerCase() !== '.js') text = text + '.js';
+            console.log('ResourceLoader: 加载' + text);
+            //if ($x.data('debug') !== true) text = text + '&debug=false';
+            return mw.loader.load("//wiki.biligame.com/" + mw.config.get("wgGameName") + "/index.php?title=" + text + "&action=raw&ctype=text/javascript", "text/javascript");
+        });
+    })
+}]);
+
+MediaWiki:PlotOptions
+
+阿哈<欢愉>
+「我要给你点奖励——来点小把戏怎么样？打烂这个游戏的经济系统，还是立刻送你去见星神？」阿哈开始拍手，「你做选择时最好小心点，不然可能废掉整个账号…难道我这样做很奇怪吗？」
+
+阿哈<欢愉>
+「我所做一切都是为了帮助太一！」阿哈大笑着拍手，祂的皮球和扑克互相拥抱，「阿哈从来乐于助人，帮助其他神是我的乐趣——」接着祂把目光转移到你身上。
+
+阿哈<欢愉>
+「你不参与进来吗，假阿基维利？不接受我的点子吗，关于『星穹列车』与『塔伊兹育罗斯』。」祂对你的凝视带着令人毛骨悚然的笑意。
+
+螺丝咕姆<天才俱乐部#76>
+「暂停：开拓者先生（女士）已被搅入局内，我们应采取防护。逻辑：『繁育』的命途威胁到了『开拓』。结论：『开拓』的阿基维利可能参与其中。」
+
+黑塔<天才俱乐部#83>
+「就这么暂停了？开拓者…螺丝咕姆为了你的安危把模拟宇宙暂停了。可惜，也不知这会阿哈有没有炸掉阿基维利的车。」黑塔不是很开心，「祂刚刚说的把戏是怎么回事？我们得检查下系统有没有受到影响，螺丝。」
